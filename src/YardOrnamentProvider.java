@@ -1,3 +1,3 @@
 public interface YardOrnamentProvider {
-    abstract public String getOrnament();
+    String getOrnament();
 }

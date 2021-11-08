@@ -1,3 +1,3 @@
 public interface TableclothPatternProvider {
-    abstract public String getTablecloth();
+    String getTablecloth();
 }

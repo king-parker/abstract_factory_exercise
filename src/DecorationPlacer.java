@@ -4,10 +4,10 @@ public class DecorationPlacer {
     private WallHangingProvider wallHanging;
     private YardOrnamentProvider yardOrnament;
 
-    public DecorationPlacer(DecorationFactory decorationFactory) {
-        tableclothPattern = decorationFactory.CreateTableclothPatternProvider();
-        wallHanging = decorationFactory.CreateWallHangingProvider();
-        yardOrnament = decorationFactory.CreateYardOrnamentProvider();
+    public DecorationPlacer() {
+        tableclothPattern = DecorationFactory.getInstance().CreateTableclothPatternProvider();
+        wallHanging = DecorationFactory.getInstance().CreateWallHangingProvider();
+        yardOrnament = DecorationFactory.getInstance().CreateYardOrnamentProvider();
     }
 
     public String placeDecorations() {

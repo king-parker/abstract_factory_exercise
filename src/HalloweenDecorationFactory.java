@@ -1,4 +1,4 @@
-public class HalloweenDecorationFactory implements DecorationFactory {
+public class HalloweenDecorationFactory extends DecorationFactory {
     @Override
     public TableclothPatternProvider CreateTableclothPatternProvider() {
         return new HalloweenTableclothPatternProvider();
