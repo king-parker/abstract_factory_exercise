@@ -1,11 +1,13 @@
 public class DecorationPlacer {
 
-    private TableclothPatternProvider tableclothPattern = new HalloweenTableclothPatternProvider();
-    private WallHangingProvider wallHanging = new HalloweenWallHangingProvider();
-    private YardOrnamentProvider yardOrnament = new HalloweenYardOrnamentProvider();
+    private TableclothPatternProvider tableclothPattern;
+    private WallHangingProvider wallHanging;
+    private YardOrnamentProvider yardOrnament;
 
-    public DecorationPlacer() {
-
+    public DecorationPlacer(DecorationFactory decorationFactory) {
+        tableclothPattern = decorationFactory.CreateTableclothPatternProvider();
+        wallHanging = decorationFactory.CreateWallHangingProvider();
+        yardOrnament = decorationFactory.CreateYardOrnamentProvider();
     }
 
     public String placeDecorations() {
