@@ -1,3 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Github defaults
 # Compiled class file
 *.class
 
