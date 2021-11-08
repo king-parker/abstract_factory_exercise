@@ -1,9 +1,8 @@
 public class DecorationPlacer {
 
-    // FIXME use dependency inversion to remove these hard-coded dependencies
-    private HalloweenTableclothPatternProvider tableclothPattern = new HalloweenTableclothPatternProvider();
-    private HalloweenWallHangingProvider wallHanging = new HalloweenWallHangingProvider();
-    private HalloweenYardOrnamentProvider yardOrnament = new HalloweenYardOrnamentProvider();
+    private TableclothPatternProvider tableclothPattern = new HalloweenTableclothPatternProvider();
+    private WallHangingProvider wallHanging = new HalloweenWallHangingProvider();
+    private YardOrnamentProvider yardOrnament = new HalloweenYardOrnamentProvider();
 
     public DecorationPlacer() {
 
